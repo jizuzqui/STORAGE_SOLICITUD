@@ -1,1 +1,5 @@
-<kmodule xmlns="http://www.drools.org/xsd/kmodule"/>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="kie-base-storage-solicitud" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="*" includes="kie-base-storage-envio">
+    <ksession name="ksession-storage-solicitud" type="stateful" default="true" clockType="realtime"/>
+  </kbase>
+</kmodule>
